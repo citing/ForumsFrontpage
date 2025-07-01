@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreachLite</title>
+  <style>
+    :root {
+      --glass-bg: rgba(255, 255, 255, 0.07);
+      --border: rgba(255, 255, 255, 0.15);
+      --text: #fff;
+      --hover: rgba(255, 255, 255, 0.12);
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen;
+      background: linear-gradient(135deg, #111 0%, #222 100%);
+      color: var(--text);
+      backdrop-filter: blur(40px);
+      -webkit-backdrop-filter: blur(40px);
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 5px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px 30px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+      background: var(--hover);
+    }
+
+    .category-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .forum-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .forum-item:first-of-type {
+      border-top: none;
+    }
+
+    .forum-name {
+      font-weight: 500;
+    }
+
+    .forum-meta {
+      color: #999;
+    }
+
+    footer {
+      margin: 50px auto;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BreachLite</h1>
+    <p>A Privacy Fully Encrpyted HackingForum</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="category-title">Leaks</div>
+      <div class="forum-item">
+        <div class="forum-name">Database Dumps</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Config Collections</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Hacking</div>
+      <div class="forum-item">
+        <div class="forum-name">Tutorials & Guides</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Exploit Sharing</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Marketplace</div>
+      <div class="forum-item">
+        <div class="forum-name">Accounts & Tools</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Services</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Cracking</div>
+      <div class="forum-item">
+        <div class="forum-name">Config Sharing</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Cracking Tutorials</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Social Engineering</div>
+      <div class="forum-item">
+        <div class="forum-name">Methods & Logs</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">SE Tools & Scripts</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Malware Development</div>
+      <div class="forum-item">
+        <div class="forum-name">Custom Bypasses</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Builder Releases</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="category-title">Security & Research</div>
+      <div class="forum-item">
+        <div class="forum-name">Zero-Days & Exploits</div>
+        <div class="forum-meta">-</div>
+      </div>
+      <div class="forum-item">
+        <div class="forum-name">Security News</div>
+        <div class="forum-meta">-</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 BreachLite | Demo only | Nothing real used.
+  </footer>
+
+</body>
+</html>
